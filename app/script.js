@@ -10,7 +10,7 @@ $(document).ready(function(){
     // inserting the response
     let html = []
     response.forEach((entry) => {
-      html.push(`<li><img src=${entry.image_url} height="680" width="173">${entry.name}</li>`)
+      html.push(`<img src=${entry.image_url} height=65% width=65%>`)
     })
     $("#list").append(html.join(""))
   });

@@ -1,3 +1,11 @@
-.beerList{
-  color: powderblue;
+div .container{
+  margin-left: 10%
+}
+
+div .beerList{
+  column-count: 6
+}
+
+h1.this{
+	margin-left: 40%;
 }
