@@ -1,5 +1,6 @@
 
-var url = "https://api.punkapi.com/v2/beers";
+var url = "https://api.punkapi.com/v2/beers"
+// function searchRepositories
 
   $(document).ready(function(){
     // Now we start the Ajax GET request. The first parameter is the URL with the data.
