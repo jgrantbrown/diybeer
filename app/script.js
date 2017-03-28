@@ -12,7 +12,6 @@ $(document).ready(function(){
     response.forEach((entry) => {
       html.push(`<li>${entry.name}</li>`)
     })
-    
     $("#list").append(html.join(""))
   });
 })
