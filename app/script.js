@@ -8,6 +8,10 @@ var url = "https://api.punkapi.com/v2/beers"
     $.get(url, function(response) {
       // Here we are getting the element on the page with the id of sentences and
       // inserting the response
-      $("#list").html(response);
+      $("#list").text(response.forEach(function(entry) {
+      console.log(entry.name)
+      })
+)
+
     });
   })
