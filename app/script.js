@@ -3,15 +3,38 @@ var url = "https://api.punkapi.com/v2/beers"
 // function searchRepositories
 
 $(document).ready(function(){
-  // Now we start the Ajax GET request. The first parameter is the URL with the data.
-  // The second parameter is a function that handles the response.
+ 
   $.get(url, function(response) {
-    // Here we are getting the element on the page with the id of sentences and
-    // inserting the response
-    let html = []
-    response.forEach((entry) => {
-      html.push(`<img src=${entry.image_url} height=65% width=65%>`)
+
+    
+   
+    var data = response.map((entry) => {
+    return (`<div class="beer" id="${entry.id}" data-name="${entry.name}" data-tagline="${entry.tagline}">
+      <img src=${entry.image_url} height=75% width=25%></div>`)
+
+  
     })
-    $("#list").append(html.join(""))
-  });
-})
+       	$("#list").append(data)
+    
+  	   	var attr = $("div.beer").each(function(e){
+  	   		$(this).on("mouseover", function(event) {
+  	   			console.log($(this)[0].attributes[2].value)
+  	   			console.log($(this)[0].attributes[3].value)
+  			})
+
+  	   		$("div.beer").append(attr)
+  	   	
+  			
+  		})
+  	})
+ })
+  	
+  // 	$(`[data-id='${event.target.dataset.id}']`).text(`name: ${event.target.dataset.name}`)
+  // }))
+  // .then(document.getElementById("list").addEventListener("mouseout", function(event) {
+  // 	$(`[data-id='${event.target.dataset.id}']`).text(`${event.target.dataset.image_url}`)
+  // }))
+  // .attributes.2.nodeValue)
+
+
+

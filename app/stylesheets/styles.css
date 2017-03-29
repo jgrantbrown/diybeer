@@ -3,9 +3,20 @@ div .container{
 }
 
 div .beerList{
-  column-count: 6
+  column-count: 5
 }
 
-h1.this{
-	margin-left: 40%;
+h1.title{
+	margin-left: 40%
+}
+
+div#pop-up {
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: #eeeeee;
+  color: #000000;
+  border: 1px solid #1a1a1a;
+  font-size: 90%;
 }

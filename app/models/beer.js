@@ -1,10 +1,14 @@
-class Beer {
+var storeBeer = []
+
+class Beer 
+{
 	constructor(name, tagline, image_url, abv, food_pairing) {
     this.name = name
     this.tagline = tagline
     this.image_url = image_url
     this.abv = abv
     this.food_pairing = food_pairing
+    storeBeer.push(this)
   }
 
   static find(id){
