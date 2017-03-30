@@ -10,13 +10,13 @@ h1.title{
 	margin-left: 40%
 }
 
-.popup {
+.beer {
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
 
-.popup .popuptext {
+.beer .popup{
     visibility: hidden;
     width: 160px;
     background-color: #555;
@@ -31,7 +31,7 @@ h1.title{
     margin-left: -80px;
 }
 
-.popup .popuptext::after {
+.beer .popup::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -42,7 +42,7 @@ h1.title{
     border-color: #555 transparent transparent transparent;
 }
 
-.popup .show {
+.beer .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
