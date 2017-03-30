@@ -6,5 +6,6 @@ class Beer {
     	this.image_url = image_url
     	this.abv = abv
     	this.food_pairing = food_pairing
+    	store.push(this)
   }
 }

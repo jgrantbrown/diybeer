@@ -2,8 +2,9 @@ div .container{
   margin-left: 10%
 }
 
-div .beerList{
+div.beerList{
   column-count: 5
+  height: 75%
 }
 
 h1.title{
@@ -48,6 +49,10 @@ h1.title{
     animation: fadeIn 1s
 }
 
+h1.beerinfo {
+
+}
+
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
     from {opacity: 0;} 
@@ -57,4 +62,19 @@ h1.title{
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+}
+
+.extras{
+    visibility: hidden;
+    width: 160px;
+}
+
+.extras::after {
+    content: "";
+    position: absolute;
+   
+}
+
+.beerfacts .show {
+    visibility: visible;
 }
