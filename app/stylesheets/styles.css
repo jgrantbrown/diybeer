@@ -25,16 +25,20 @@ img{
   margin-left: 30%;
   column-count: 5
   border-radius: 25px;
+  border: 5px;
+  border-color: black;
 }
 
 .title{
     background-image: url("../images/brewery-large.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    position: relative;
    
 }
 
-.titletext {
+h1.titletext {
+    position: :static;
     font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 2em;
@@ -47,6 +51,13 @@ img{
     padding: 20px 30px; 
     padding-top: 600px;
     color: black;
+}
+
+.titlestyle {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 4px white solid;
+    background-color: white;
 }
 
 .beer {
