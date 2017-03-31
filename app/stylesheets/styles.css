@@ -1,19 +1,30 @@
-body{
-   
+div.container{
+    background-color: black;
 }
 
-div.container{
-  margin-left: 10%
-  background-color: black
+.beerList{
+  padding-top: 50px
+  -webkit-columns: 4 150px;
+  -moz-columns: 4 150px;
+  columns: 4 150px;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
 }
+
+.imgbox{
+    height: 300px;
+    width: 300px;
+}
+
 
 img{
+  margin-left: 40%;
   column-count: 5
-  height: 85%
 }
 
 .title{
-    color: blue
+    color: magenta;
 	margin-left: 40%
    
 }
@@ -31,8 +42,8 @@ img{
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
+    padding: 15px 0;
+    position: static;
     z-index: 1;
     bottom: 125%;
     left: 50%;
@@ -41,7 +52,7 @@ img{
 
 .beer .popup::after {
     content: "";
-    position: absolute;
+    position: static;
     top: 100%;
     left: 50%;
     margin-left: -5px;
@@ -84,5 +95,6 @@ h1.beerinfo {
 
 .beerfacts .show {
     visibility: visible;
+    background-color: yellow
 }
-*{border: 1px solid red;}
+/**{border: 1px solid red;}*/

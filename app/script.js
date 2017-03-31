@@ -12,14 +12,15 @@ $(document).ready(function(){
 
 
     return (`<div class="beer" id="${beer.id}" data-name="${beer.name}" data-tagline="${beer.tagline}" data-abv="${beer.abv}" data-food_pairing="${beer.food_pairing}">
-    			 <img onmouseover="beerPopUp(event)" onmouseout="beerPopUp(event)" onclick="renderInfo(event)" src=${beer.image_url} height=75% width=25%>
+    			 <div class="imgbox"><img onmouseover="beerPopUp(event)" onmouseout="beerPopUp(event)" onclick="renderInfo(event)" src=${beer.image_url} height=75% width=25%>
     	        <div class="beer popup" id="${beer.id}" data-name="${beer.name}" data-tagline="${beer.tagline}">
      			      Name: ${beer.name}
   	   			    "${beer.tagline}""
       		    </div>
-              <div class="extras col-xs-8" id="${beer.id}" data-abv="${beer.abv}" data-food_pairing="${beer.food_pairing}">
+              <div class="extras" id="${beer.id}" data-abv="${beer.abv}" data-food_pairing="${beer.food_pairing}">
                 ABV: ${beer.abv} <br>
                 Food Pairing: ${beer.food_pairing}
+              </div>
               </div> 
              </div>`)
   
