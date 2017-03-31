@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
     return (`<div class="beer" id="${beer.id}" data-name="${beer.name}" data-tagline="${beer.tagline}" data-abv="${beer.abv}" data-food_pairing="${beer.food_pairing}">
-    			 <div class="imgbox"><img onmouseover="beerPopUp(event)" onmouseout="beerPopUp(event)" onclick="renderInfo(event)" src=${beer.image_url} height=75% width=25%>
+    			 <div class="imgbox"><img onmouseover="beerPopUp(event)" onmouseout="beerPopUp(event)" onclick="renderInfo(event)" src=${beer.image_url} height=200px width=78px>
     	        <div class="beer popup" id="${beer.id}" data-name="${beer.name}" data-tagline="${beer.tagline}">
      			      Name: ${beer.name}
   	   			    "${beer.tagline}""
