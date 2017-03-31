@@ -18,8 +18,8 @@ $(document).ready(function(){
   	   			    (${beer.tagline})
       		    </div>
               <div class="extras col-xs-8" id="${beer.id}" data-abv="${beer.abv}" data-food_pairing="${beer.food_pairing}">
-                (${beer.abv})
-                (${beer.food_pairing})
+                ABV: ${beer.abv} <br>
+                Food Pairing: ${beer.food_pairing}
               </div> 
              </div>`)
   
@@ -42,6 +42,9 @@ function renderInfo(event) {
   var extras = $(event.target).closest("div").children().eq(2)
   document.getElementById("#info").innerHTML=(extras.toggleClass("show"))
 }
+
+
+//animate css
 
 
 

@@ -1,14 +1,21 @@
-div .container{
+body{
+   
+}
+
+div.container{
   margin-left: 10%
+  background-color: black
 }
 
-div.beerList{
+img{
   column-count: 5
-  height: 75%
+  height: 85%
 }
 
-h1.title{
+.title{
+    color: blue
 	margin-left: 40%
+   
 }
 
 .beer {
@@ -20,7 +27,7 @@ h1.title{
 .beer .popup{
     visibility: hidden;
     width: 160px;
-    background-color: #555;
+    background-color: magenta;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -78,3 +85,4 @@ h1.beerinfo {
 .beerfacts .show {
     visibility: visible;
 }
+*{border: 1px solid red;}
