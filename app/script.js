@@ -12,9 +12,9 @@ $(document).ready(function(){
 
 
     return (`<div class="beer" id="${beer.id}" data-name="${beer.name}" data-tagline="${beer.tagline}" data-abv="${beer.abv}" data-food_pairing="${beer.food_pairing}">
-    			 <div class="imgbox"><img onmouseover="beerPopUp(event)" onmouseout="beerPopUp(event)" onclick="renderInfo(event)" src=${beer.image_url} height=70% width=auto>
+    			 <div class="imgbox"><img onmouseover="beerPopUp(event)" onmouseout="beerPopUp(event)" onclick="renderInfo(event)" src=${beer.image_url} height=70%px width=auto>
     	        <div class="beer popup" id="${beer.id}" data-name="${beer.name}" data-tagline="${beer.tagline}">
-     			      Name: ${beer.name}
+     			      Name: ${beer.name}<br>
   	   			    "${beer.tagline}""
       		    </div>
               <div class="extras" id="${beer.id}" data-abv="${beer.abv}" data-food_pairing="${beer.food_pairing}">
@@ -43,6 +43,8 @@ function renderInfo(event) {
   var extras = $(event.target).closest("div").children().eq(2)
   document.getElementById("#info").innerHTML=(extras.toggleClass("show"))
 }
+
+
 
 
 //animate css
